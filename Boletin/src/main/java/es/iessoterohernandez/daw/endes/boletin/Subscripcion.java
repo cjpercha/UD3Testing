@@ -1,4 +1,4 @@
-package es.iessoterohernandez.daw.endes.BoletinJunit4;
+package es.iessoterohernandez.daw.endes.boletin;
 
 public class Subscripcion {
 	private int precio ; // precio total de la subscripción euro-cent

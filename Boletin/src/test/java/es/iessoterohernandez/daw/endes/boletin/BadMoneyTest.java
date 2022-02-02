@@ -1,4 +1,4 @@
-package es.iessoterohernandez.daw.endes.BoletinJunit4;
+package es.iessoterohernandez.daw.endes.boletin;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -8,25 +8,28 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class AccountTest {
+import es.iessoterohernandez.daw.endes.boletin.Account;
+
+class BadMoneyTest {
 	
 	static Account c;
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
-		c= new Account("Juan", 1, 99f);
-	}
-
-	//No consigo que salga
-	@Test
-	void testGetBalance() {
-		assertEquals(99f, c.getBalance());
+		
+		c= new Account("Juan", 1, 99.9f);
 	}
 	
+	//Igual que con Account
+	@Test
+	void testGetBalance() {
+		assertEquals(47.5f, c.getBalance());
+	}
+
 	@Test
 	void testDeposit() {
-		assertEquals(true,c.deposit(30f));
-		assertEquals(false,c.deposit(-10f));
+		assertEquals(true,c.deposit(100.50f));
+		assertEquals(false,c.deposit(-42f));
 	}
 
 	@Test
@@ -38,13 +41,13 @@ class AccountTest {
 	@Test
 	void testAddInterest() {
 		c.addInterest();
-		assertEquals(99f + (99f * 0.045f), c.getBalance());
+		assertEquals(99.9f + (99.9f * 0.045f), c.getBalance());
 	}
-
 
 	@Test
 	void testGetAccountNumber() {
-		assertEquals(1, c.getAccountNumber());
+		assertEquals(00000000001, c.getAccountNumber());
 	}
-	
+
+
 }

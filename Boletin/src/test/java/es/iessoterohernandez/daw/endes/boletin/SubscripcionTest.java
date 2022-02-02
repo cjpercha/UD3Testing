@@ -1,4 +1,4 @@
-package es.iessoterohernandez.daw.endes.BoletinJunit4;
+package es.iessoterohernandez.daw.endes.boletin;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -7,6 +7,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import es.iessoterohernandez.daw.endes.boletin.Subscripcion;
 
 class SubscripcionTest {
 	

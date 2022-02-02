@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
  
     <groupId>es.iessoterohernandez.daw.endes</groupId>
-    <artifactId>BoletinJunit4</artifactId>
+    <artifactId>Boletin</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
  
-    <name>BoletinJunit4</name>
+    <name>Boletin</name>
     <url>http://www.example.com</url>
  
     <properties>
@@ -32,9 +32,31 @@
 
     <dependencies>
         <!-- Dependencies -->
-    
+    	<dependency>
+    		<groupId>org.junit.platform</groupId>
+    		<artifactId>junit-platform-runner</artifactId>
+    		<version>1.8.2</version>
+    		<scope>test</scope>
+		</dependency>
     
         <!-- Testing dependencies-->
+    	<dependency>
+		    <groupId>org.junit.platform</groupId>
+		    <artifactId>junit-platform-suite-api</artifactId>
+		    <version>1.8.2</version>
+		    <scope>test</scope>
+		</dependency>
+		<dependency>
+		    <groupId>org.junit.platform</groupId>
+		    <artifactId>junit-platform-suite</artifactId>
+		    <version>1.8.2</version>
+		    <scope>test</scope>
+		</dependency>
+		<dependency>
+		    <groupId>org.junit.platform</groupId>
+		    <artifactId>junit-platform-suite-engine</artifactId>
+		    <version>1.8.2</version>
+		</dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
@@ -94,7 +116,7 @@
                     <configuration>
                     <transformers>
                         <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                        <mainClass>es.iessoterohernandez.daw.endes.BoletinJunit4.App</mainClass>
+                        <mainClass>es.iessoterohernandez.daw.endes.boletin.App</mainClass>
                         </transformer>
                     </transformers>
                     </configuration>

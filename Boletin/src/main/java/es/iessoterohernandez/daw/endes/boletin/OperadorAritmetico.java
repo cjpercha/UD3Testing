@@ -1,4 +1,4 @@
-package es.iessoterohernandez.daw.endes.BoletinJunit4;
+package es.iessoterohernandez.daw.endes.boletin;
 
 public class OperadorAritmetico {
 	public static int suma(int a, int b) {

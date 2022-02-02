@@ -1,4 +1,4 @@
-package es.iessoterohernandez.daw.endes.BoletinJunit4;
+package es.iessoterohernandez.daw.endes.boletin;
 
 public class Boa {
 	private String name;
